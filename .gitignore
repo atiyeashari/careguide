@@ -1,0 +1,9 @@
+*.pyc
+__ pycache __
+db.sqlite3
+/static
+*.log
+*.pot
+*.idea*
+.idea/workspace.xml
+local_settings.py
