@@ -43,10 +43,10 @@ class TimeSpan(models.Model):
         abstract = True
 
 
-class BookedTime(TimeSpan):
-    family = models.ForeignKey(BabySitter)
-    baby_sitter = models.ForeignKey(Family)
-
-
 class Availability(TimeSpan):
     baby_sitter = models.ForeignKey(BabySitter)
+
+
+class BookedTime(TimeSpan):
+    family = models.ForeignKey(Availability)
+    baby_sitter = models.ForeignKey(Family)
