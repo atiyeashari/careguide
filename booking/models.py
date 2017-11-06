@@ -37,7 +37,8 @@ class Family(models.Model):
 
 
 class TimeSpan(models.Model):
-    time_span = models.DurationField()
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField()
 
     class Meta:
         abstract = True
