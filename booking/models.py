@@ -14,6 +14,9 @@ class BabySitter(models.Model):
         user.user_permissions.add(p)
         super(BabySitter, self).save(*args, **kwargs)
 
+    def __str__(self):
+        return self.user.get_full_name()
+
     class Meta:
         permissions = (
             ("baby_sitter", "Can add availabilities"),
@@ -30,24 +33,29 @@ class Family(models.Model):
         user.user_permissions.add(p)
         super(Family, self).save(*args, **kwargs)
 
+    def __str__(self):
+        return self.user.get_full_name()
+
     class Meta:
         permissions = (
             ("family", "Can book time spans"),
         )
 
 
-class TimeSpan(models.Model):
+class Availability(models.Model):
+    baby_sitter = models.ForeignKey(BabySitter)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
 
     class Meta:
-        abstract = True
+        ordering = ['-start_time']
 
 
-class Availability(TimeSpan):
+class BookedTime(models.Model):
+    family = models.ForeignKey(Family)
     baby_sitter = models.ForeignKey(BabySitter)
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField()
 
-
-class BookedTime(TimeSpan):
-    family = models.ForeignKey(Availability)
-    baby_sitter = models.ForeignKey(Family)
+    class Meta:
+        ordering = ['-start_time']
