@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb0e6602-5757-49ad-aa62-a6c6a1e2e80c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/booking/templates/success.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/models.py" afterPath="$PROJECT_DIR$/booking/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/helper_methods.py" afterPath="$PROJECT_DIR$/booking/helper_methods.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/templates/babySitterAccount.html" afterPath="$PROJECT_DIR$/booking/templates/babySitterAccount.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/urls.py" afterPath="$PROJECT_DIR$/booking/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/views.py" afterPath="$PROJECT_DIR$/booking/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/booking/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-10">
-              <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+              <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -33,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/booking/management/commands/initMyDB.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -53,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/booking/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -64,28 +65,18 @@
       <file leaf-file-name="helper_methods.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/booking/helper_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="720">
+              <caret line="40" column="72" lean-forward="false" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="babySitterAccount.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="babySitterAccount.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/booking/templates/babySitterAccount.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="familyAccount.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/booking/templates/familyAccount.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="414">
+              <caret line="23" column="31" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="23" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -94,11 +85,21 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/booking/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+            <state relative-caret-position="738">
+              <caret line="41" column="48" lean-forward="false" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="success.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/booking/templates/success.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,8 +109,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -117,7 +118,11 @@
     <findStrings>
       <find>admin</find>
       <find>User</find>
+      <find>\{\% extends \&quot;base\.html\&quot; \%\}\n\{\% block content \%\}\n\&lt;table class\=\&quot;table table\-bordered table\-hover\&quot;\&gt;\n    \&lt;thead class\=\&quot;thead\-dark\&quot;\&gt;\n        \&lt;tr\&gt;\n          \&lt;th scope\=\&quot;col\&quot; class\=\&quot;info\&quot;\&gt;Name\&lt;\/th\&gt;\n          \&lt;th scope\=\&quot;col\&quot; class\=\&quot;info\&quot;\&gt;From\&lt;\/th\&gt;\n          \&lt;th scope\=\&quot;col\&quot; class\=\&quot;info\&quot;\&gt;To\&lt;\/th\&gt;\n          \&lt;th scope\=\&quot;col\&quot; class\=\&quot;info\&quot;\&gt;Delete\&lt;\/th\&gt;\n        \&lt;\/tr\&gt;\n    \&lt;\/thead\&gt;\n    \&lt;tbody\&gt;\n        \{\% if bookings \%\}\n            \{\% for booking in bookings \%\}\n                \&lt;tr class\=\&quot;info\&quot;\&gt;\n                    \&lt;td scope\=\&quot;row\&quot; class\=\&quot;info\&quot;\&gt;\{\{booking\.family\}\}\&lt;\/td\&gt;\n                    \&lt;td scope\=\&quot;row\&quot; class\=\&quot;info\&quot;\&gt;\{\{booking\.start_time\}\}\&lt;\/td\&gt;\n                    \&lt;td scope\=\&quot;row\&quot; class\=\&quot;info\&quot;\&gt;\{\{booking\.end_time\}\}\&lt;\/td\&gt;\n                    \&lt;td scope\=\&quot;row\&quot; class\=\&quot;info\&quot;\&gt;\&lt;form method\=\&quot;post\&quot; action\=\&quot;\/deleteBooking\&quot; name\=\&quot;booking\-\{\{booking\.id\}\}\&quot;\&gt;\&lt;button type\=\&quot;submit\&quot; id\=\&quot;booking\-\{\{booking\.id\}\}\&quot; class\=\&quot;btn btn\-danger\&quot;\&gt;Delete\&lt;\/button\&gt;\&lt;\/form\&gt;\&lt;\/td\&gt;\n                \&lt;\/tr\&gt;\n            \{\% endfor \%\}\n        \{\% endif \%\}\n    \&lt;\/tbody\&gt;\n\&lt;\/table\&gt;\n\&lt;table class\=\&quot;table table\-bordered table\-hover\&quot;\&gt;\n    \&lt;thead class\=\&quot;thead\-dark\&quot;\&gt;\n        \&lt;tr\&gt;\n          \&lt;th scope\=\&quot;col\&quot; class\=\&quot;info\&quot;\&gt;From\&lt;\/th\&gt;\n          \&lt;th scope\=\&quot;col\&quot; class\=\&quot;info\&quot;\&gt;To\&lt;\/th\&gt;\n          \&lt;th scope\=\&quot;col\&quot; class\=\&quot;info\&quot;\&gt;Delete\&lt;\/th\&gt;\n        \&lt;\/tr\&gt;\n    \&lt;\/thead\&gt;\n    \&lt;tbody\&gt;\n        \{\% if availabilities \%\}\n            \{\% for availability in availabilities \%\}\n                \&lt;tr class\=\&quot;info\&quot;\&gt;\n                    \&lt;td scope\=\&quot;row\&quot; class\=\&quot;info\&quot;\&gt;\{\{availability\.start_time\}\}\&lt;\/td\&gt;\n                    \&lt;td scope\=\&quot;row\&quot; class\=\&quot;info\&quot;\&gt;\{\{availability\.end_time\}\}\&lt;\/td\&gt;\n                    \&lt;td scope\=\&quot;row\&quot; class\=\&quot;info\&quot;\&gt;\&lt;button type\=\&quot;button\&quot; id\=\&quot;availability\-\{\{availability\.id\}\}\&quot; class\=\&quot;btn btn\-danger\&quot;\&gt;Delete\&lt;\/button\&gt;\&lt;\/td\&gt;\n                \&lt;\/tr\&gt;\n            \{\% endfor \%\}\n        \{\% endif \%\}\n    \&lt;\/tbody\&gt;\n\&lt;\/table\&gt;\n\n\&lt;form class\=\&quot;form\-inline\&quot;\&gt;\n  \&lt;div class\=\&quot;form\-group mx\-sm\-3\&quot;\&gt;\n    \&lt;label for\=\&quot;time\&quot; class\=\&quot;sr\-only\&quot;\&gt;From\&lt;\/label\&gt;\n    \&lt;input type\=\&quot;datetime\-local\&quot; class\=\&quot;form\-control\&quot; id\=\&quot;from\-time\&quot;\&gt;\n  \&lt;\/div\&gt;\n    \&lt;div class\=\&quot;form\-group mx\-sm\-3\&quot;\&gt;\n    \&lt;label for\=\&quot;time\&quot; class\=\&quot;sr\-only\&quot;\&gt;To\&lt;\/label\&gt;\n    \&lt;input type\=\&quot;datetime\-local\&quot; class\=\&quot;form\-control\&quot; id\=\&quot;to\-time\&quot;\&gt;\n  \&lt;\/div\&gt;\n  \&lt;button type\=\&quot;submit\&quot; class\=\&quot;btn btn\-primary\&quot;\&gt;Add Availability\&lt;\/button\&gt;\n\&lt;\/form\&gt;\n\n\{\% endblock \%\}</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,7 +140,6 @@
         <option value="$PROJECT_DIR$/booking/templates/registration/base.html" />
         <option value="$PROJECT_DIR$/careguide/urls.py" />
         <option value="$PROJECT_DIR$/booking/templates/login.html" />
-        <option value="$PROJECT_DIR$/booking/urls.py" />
         <option value="$PROJECT_DIR$/booking/templates/registration/babySitterList.html" />
         <option value="$PROJECT_DIR$/booking/templates/BabySitterAccount.html" />
         <option value="$PROJECT_DIR$/booking/templates/registration/login.html" />
@@ -143,11 +147,13 @@
         <option value="$PROJECT_DIR$/booking/templates/babySitterSchedule.html" />
         <option value="$PROJECT_DIR$/booking/templates/base.html" />
         <option value="$PROJECT_DIR$/booking/templates/helper_methods.py" />
-        <option value="$PROJECT_DIR$/booking/helper_methods.py" />
         <option value="$PROJECT_DIR$/booking/management/commands/initMyDB.py" />
         <option value="$PROJECT_DIR$/booking/models.py" />
-        <option value="$PROJECT_DIR$/booking/views.py" />
         <option value="$PROJECT_DIR$/booking/templates/babySitterAccount.html" />
+        <option value="$PROJECT_DIR$/booking/helper_methods.py" />
+        <option value="$PROJECT_DIR$/booking/views.py" />
+        <option value="$PROJECT_DIR$/booking/urls.py" />
+        <option value="$PROJECT_DIR$/booking/templates/success.html" />
       </list>
     </option>
   </component>
@@ -173,8 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,19 +213,14 @@
             <path>
               <item name="careguide" type="b2602c69:ProjectViewProjectNode" />
               <item name="careguide" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="careguide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="careguide" type="462c0819:PsiDirectoryNode" />
               <item name="careguide" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509991960335</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Baby Sitter's availability and booked times added.">
+      <created>1510628794783</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1510628794783</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -334,10 +340,9 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27061427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2739347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.49806523" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66910994" sideWeight="0.5041459" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.49806523" order="9" side_tool="false" content_ui="tabs" />
@@ -352,6 +357,7 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="164" y="89" width="1657" height="892" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -389,21 +395,14 @@
     <MESSAGE value="Login page added" />
     <MESSAGE value="Basic account pages added." />
     <MESSAGE value="Helper methods added to be used in views" />
-    <option name="LAST_COMMIT_MESSAGE" value="Helper methods added to be used in views" />
+    <MESSAGE value="Baby Sitter's availability and booked times added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Baby Sitter's availability and booked times added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/booking/templates/familyAccount.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/booking/templates/babySitterAccount.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -416,7 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -441,7 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -485,7 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -520,7 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -684,7 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -706,7 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -714,7 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-108">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,6 +714,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="32" column="46" lean-forward="false" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/careguide/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booking/templates/familyAccount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -729,25 +735,43 @@
     <entry file="file://$PROJECT_DIR$/booking/management/commands/initMyDB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/booking/urls.py">
+    <entry file="file://$PROJECT_DIR$/booking/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="-10">
+          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/booking/helper_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="720">
+          <caret line="40" column="72" lean-forward="false" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booking/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="48" lean-forward="false" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booking/templates/babySitterAccount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="31" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="23" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -760,46 +784,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/careguide/settings.py">
+    <entry file="file://$PROJECT_DIR$/booking/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/booking/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="64" lean-forward="false" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+        <state relative-caret-position="180">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/booking/templates/familyAccount.html">
+    <entry file="file://$PROJECT_DIR$/booking/templates/success.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/booking/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/booking/templates/babySitterAccount.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state relative-caret-position="144">
+          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
           <folding />
         </state>
       </provider>

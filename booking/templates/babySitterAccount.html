@@ -16,7 +16,13 @@
                     <td scope="row" class="info">{{booking.family}}</td>
                     <td scope="row" class="info">{{booking.start_time}}</td>
                     <td scope="row" class="info">{{booking.end_time}}</td>
-                    <td scope="row" class="info"><button type="button" class="btn btn-danger">Delete</button></td>
+                    <td scope="row" class="info">
+                        <form method="post" action="/deleteBooking">
+                             {% csrf_token %}
+                            <input type="hidden" name= "id" value="{{booking.id}}">
+                            <button type="submit" id="booking-{{booking.id}}" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
                 </tr>
             {% endfor %}
         {% endif %}
@@ -36,7 +42,7 @@
                 <tr class="info">
                     <td scope="row" class="info">{{availability.start_time}}</td>
                     <td scope="row" class="info">{{availability.end_time}}</td>
-                    <td scope="row" class="info"><button type="button" class="btn btn-danger">Delete</button></td>
+                    <td scope="row" class="info"><button type="button" id="availability-{{availability.id}}" class="btn btn-danger">Delete</button></td>
                 </tr>
             {% endfor %}
         {% endif %}
