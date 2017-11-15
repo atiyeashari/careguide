@@ -1,7 +1,10 @@
 from django.contrib.auth.models import User, Permission
 from django.db import models
+import pytz
 
 # Create your models here.
+
+utc=pytz.UTC
 
 
 class BabySitter(models.Model):
@@ -46,6 +49,11 @@ class Availability(models.Model):
     baby_sitter = models.ForeignKey(BabySitter)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
+    
+    def save(self, *args, **kwargs):
+        if self.start_time >= self.end_time:
+            raise ValueError("Start time must be lower than end time")
+        super(Availability, self).save(*args, **kwargs)
 
     class Meta:
         ordering = ['-start_time']
@@ -56,6 +64,11 @@ class BookedTime(models.Model):
     baby_sitter = models.ForeignKey(BabySitter)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
+
+    def save(self, *args, **kwargs):
+        if self.start_time >= self.end_time:
+            raise ValueError("Start time must be lower than end time")
+        super(BookedTime, self).save(*args, **kwargs)
 
     class Meta:
         ordering = ['-start_time']

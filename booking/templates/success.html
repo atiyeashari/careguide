@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 <p>
-    Done
+    {% if message %}
+        {{message}}
+    {% endif %}
 </p>
 <form method="get" action="/accounts/profile/">
-     {% csrf_token %}
+     <!--{% csrf_token %}-->
     <input type="hidden">
     <button type="submit" class="btn btn-info">Back</button>
 </form>

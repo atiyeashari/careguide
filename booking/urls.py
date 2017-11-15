@@ -8,5 +8,6 @@ urlpatterns = [
     # url(r'^login/$', auth_views.LoginView.as_view(template_name='login.html', redirect_field_name='index'), name='login'),
     # url(r'^$', views.index, name='index'),
     url(r'^accounts/profile/$', views.index, name='index'),
-    url(r'^deleteBooking', views.delete_booking, name='delete_booking')
+    url(r'^deleteBooking/$', views.delete_booking, name='delete_booking'),
+    url(r'^addAvailability/$', views.baby_sitter_add_availability, name='baby_sitter_add_availability')
 ]

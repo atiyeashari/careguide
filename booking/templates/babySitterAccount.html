@@ -17,7 +17,7 @@
                     <td scope="row" class="info">{{booking.start_time}}</td>
                     <td scope="row" class="info">{{booking.end_time}}</td>
                     <td scope="row" class="info">
-                        <form method="post" action="/deleteBooking">
+                        <form method="post" action="/deleteBooking/">
                              {% csrf_token %}
                             <input type="hidden" name= "id" value="{{booking.id}}">
                             <button type="submit" id="booking-{{booking.id}}" class="btn btn-danger">Delete</button>
@@ -49,14 +49,15 @@
     </tbody>
 </table>
 
-<form class="form-inline">
+<form class="form-inline" method="post" action="/addAvailability/">
+      {% csrf_token %}
   <div class="form-group mx-sm-3">
     <label for="time" class="sr-only">From</label>
-    <input type="datetime-local" class="form-control" id="from-time">
+    <input type="datetime-local" class="form-control" name="from-time">
   </div>
     <div class="form-group mx-sm-3">
     <label for="time" class="sr-only">To</label>
-    <input type="datetime-local" class="form-control" id="to-time">
+    <input type="datetime-local" class="form-control" name="to-time">
   </div>
   <button type="submit" class="btn btn-primary">Add Availability</button>
 </form>
