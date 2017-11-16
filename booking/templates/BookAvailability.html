@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="text-center">Availabilites</p>
+<table class="table table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+          <th scope="col" class="info">From</th>
+          <th scope="col" class="info">To</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if availabilities %}
+            {% for availability in availabilities %}
+                <tr class="info">
+                    <td scope="row" class="info">{{availability.start_time}}</td>
+                    <td scope="row" class="info">{{availability.end_time}}</td>
+                </tr>
+            {% endfor %}
+        {% endif %}
+    </tbody>
+</table>
+
+<form class="form-inline" method="post" action="/bookAvailability/">
+      {% csrf_token %}
+    <input type="hidden" name= "id" value="{{id}}">
+    <div class="form-group mx-sm-3">
+        <label for="time" class="sr-only">From</label>
+        <input type="datetime-local" class="form-control" name="from-time">
+    </div>
+    <div class="form-group mx-sm-3">
+        <label for="time" class="sr-only">To</label>
+        <input type="datetime-local" class="form-control" name="to-time">
+    </div>
+    <button type="submit" class="btn btn-primary">Book</button>
+</form>
+
+{% endblock %}

@@ -24,9 +24,9 @@ def merge_interval(times, interval):
 
 
 def included(times, interval):
-    for i, time in enumerate(times):
-        time.start_time <= interval.start_time and time.end_time >= interval.end_time
-        return i
+    for time in times:
+        if time.start_time <= interval.start_time and time.end_time >= interval.end_time:
+            return time
     return -1
 
 
@@ -35,17 +35,12 @@ def included(times, interval):
 def add_availability(availability):
     booked_times = BookedTime.objects.filter(baby_sitter=availability.baby_sitter)
     if len(overlap(booked_times, availability)) > 0:
-        print("This time cannot be available because it's booked.")
         return "This time cannot be available because it's booked."
     if availability.start_time >= availability.end_time:
-        print("Start time must be sooner than end time")
         return "Start time must be sooner than end time"
-    print(availability.baby_sitter)
     availabilities = Availability.objects.filter(baby_sitter=availability.baby_sitter)
     overlapped_availabilities = overlap(availabilities, availability)
     new_availability = merge_interval(availabilities, availability)
-    print(new_availability.start_time)
-    print(new_availability.end_time)
     for i in overlapped_availabilities:
         availabilities[i].delete()
     new_availability.save()

@@ -10,5 +10,7 @@ urlpatterns = [
     url(r'^accounts/profile/$', views.index, name='index'),
     url(r'^deleteBooking/$', views.delete_booking, name='delete_booking'),
     url(r'^deleteAvailability/$', views.delete_availability, name='delete_availability'),
-    url(r'^deleteAvailability/$', views.baby_sitter_add_availability, name='baby_sitter_add_availability')
+    url(r'^checkAvailability/$', views.check_availability, name='check_availability'),
+    url(r'^bookAvailability/$', views.add_booking, name='add_booking'),
+    url(r'^addAvailability/$', views.baby_sitter_add_availability, name='baby_sitter_add_availability')
 ]

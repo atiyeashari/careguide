@@ -3,10 +3,8 @@ from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required, permission_required
 from django.core.exceptions import ObjectDoesNotExist
 from datetime import datetime
-# from booking.models import *
 from booking.helper_methods import *
 import pytz
-from booking.models import BookedTime
 
 utc=pytz.UTC
 
@@ -24,7 +22,10 @@ def index(request):
             context = {'bookings': booked_times, 'availabilities': availabilities}
             return render(request, 'babySitterAccount.html', context)
         elif request.user.has_perm('booking.family'):
-            context = {}
+            family = Family.objects.get(user=request.user)
+            booked_times = BookedTime.objects.filter(family=family)
+            baby_sitters = BabySitter.objects.all()
+            context = {'bookings': booked_times, 'baby_sitters': baby_sitters}
             return render(request, 'familyAccount.html', context)
 
     return HttpResponse("Hello, world. You're at the booking index.")
@@ -76,7 +77,7 @@ def delete_availability(request):
         try:
             availability = Availability.objects.get(id=availability_id)
         except ObjectDoesNotExist:
-            context = {"message": "Baby sitter or availability not found"}
+            context = {"message": "Availability not found"}
             return render(request, 'success.html', context)
         if availability.baby_sitter.user == request.user:
             availability.delete()
@@ -86,8 +87,54 @@ def delete_availability(request):
     return render(request, 'success.html', context)
 
 
+@permission_required('booking.family')
+@login_required(login_url='/login/')
+def check_availability(request):
+    if request and request.user and request.method == 'GET' and request.GET['id']:
+        baby_sitter_id = request.GET['id']
+        try:
+            baby_sitter = BabySitter.objects.get(pk=baby_sitter_id)
+        except ObjectDoesNotExist:
+            context = {"message": "Baby Sitter not found"}
+            return render(request, 'success.html', context)
+        availabilities = Availability.objects.filter(baby_sitter=baby_sitter)
+        context = {'availabilities': availabilities, 'id': baby_sitter_id}
+        return render(request, 'BookAvailability.html', context)
+    context = {"message": "Invalid request"}
+    return render(request, 'success.html', context)
+
 
 @permission_required('booking.family')
 @login_required(login_url='/login/')
 def add_booking(request):
-    pass
+    if request and request.user and request.method == 'POST' and request.POST['from-time'] and request.POST['to-time'] and request.POST['id']:
+        baby_sitter_id = request.POST['id']
+        try:
+            baby_sitter = BabySitter.objects.get(pk=baby_sitter_id)
+            family = Family.objects.get(user=request.user)
+        except ObjectDoesNotExist:
+            context = {"message": "Baby Sitter or family not found"}
+            return render(request, 'success.html', context)
+        from_time = utc.localize(datetime.strptime(request.POST['from-time'], '%Y-%m-%dT%H:%M'))
+        to_time = utc.localize(datetime.strptime(request.POST['to-time'], '%Y-%m-%dT%H:%M'))
+        if from_time >= to_time:
+            context = {"message": "Start time should be sooner than end time"}
+            return render(request, 'success.html', context)
+        booked_time = BookedTime(baby_sitter=baby_sitter, family=family, start_time=from_time, end_time=to_time)
+        availabilities = Availability.objects.filter(baby_sitter=baby_sitter)
+        including_availability = included(availabilities, booked_time)
+        if including_availability == -1:
+            context = {"message": "The baby sitter is not available for that interval"}
+            return render(request, 'success.html', context)
+        booked_time.save()
+        if including_availability.start_time < booked_time.start_time:
+            availability = Availability(baby_sitter=baby_sitter, start_time=including_availability.start_time, end_time=booked_time.start_time)
+            availability.save()
+        if including_availability.end_time > booked_time.end_time:
+            availability = Availability(baby_sitter=baby_sitter, start_time=booked_time.end_time, end_time=including_availability.end_time)
+            availability.save()
+        including_availability.delete()
+        context = {"message": "Successfully booked!"}
+        return render(request, 'success.html', context)
+    context = {"message": "Invalid request"}
+    return render(request, 'success.html', context)

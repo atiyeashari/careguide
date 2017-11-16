@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="text-center">Booked Times</p>
+<table class="table table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+          <th scope="col" class="info">Name</th>
+          <th scope="col" class="info">From</th>
+          <th scope="col" class="info">To</th>
+          <th scope="col" class="info">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if bookings %}
+            {% for booking in bookings %}
+                <tr class="info">
+                    <td scope="row" class="info">{{booking.baby_sitter}}</td>
+                    <td scope="row" class="info">{{booking.start_time}}</td>
+                    <td scope="row" class="info">{{booking.end_time}}</td>
+                    <td scope="row" class="info">
+                        <form method="post" action="/deleteBooking/">
+                             {% csrf_token %}
+                            <input type="hidden" name= "id" value="{{booking.id}}">
+                            <button type="submit" id="booking-{{booking.id}}" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        {% endif %}
+    </tbody>
+</table>
+<p class="text-center">Baby Sitters</p>
+<table class="table table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+          <th scope="col" class="info">Name</th>
+          <th scope="col" class="info">Phone Number</th>
+          <th scope="col" class="info">Select</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if baby_sitters %}
+            {% for baby_sitter in baby_sitters %}
+                <tr class="info">
+                    <td scope="row" class="info">{{baby_sitter}} </td>
+                    <td scope="row" class="info">{{baby_sitter.phone_number}}</td>
+                    <td scope="row" class="info">
+                        <form method="get" action="/checkAvailability/">
+                            <input type="hidden" name= "id" value="{{baby_sitter.user.id}}">
+                            <button type="submit" id="baby_sitter-{{baby_sitter.user.id}}" class="btn btn-info">Select</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        {% endif %}
+    </tbody>
+</table>
+{% endblock %}

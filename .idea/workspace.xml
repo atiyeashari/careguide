@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb0e6602-5757-49ad-aa62-a6c6a1e2e80c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/booking/templates/BookAvailability.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/helper_methods.py" afterPath="$PROJECT_DIR$/booking/helper_methods.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/models.py" afterPath="$PROJECT_DIR$/booking/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/templates/babySitterAccount.html" afterPath="$PROJECT_DIR$/booking/templates/babySitterAccount.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/templates/familyAccount.html" afterPath="$PROJECT_DIR$/booking/templates/familyAccount.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/urls.py" afterPath="$PROJECT_DIR$/booking/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/views.py" afterPath="$PROJECT_DIR$/booking/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
@@ -22,8 +22,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/booking/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="350">
+              <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -34,8 +34,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/booking/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="234">
+              <caret line="13" column="68" lean-forward="false" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -46,8 +46,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/booking/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="80" column="56" lean-forward="false" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
+            <state relative-caret-position="2430">
+              <caret line="135" column="24" lean-forward="false" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="24" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -55,11 +55,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BookAvailability.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/booking/templates/BookAvailability.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="familyAccount.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/booking/templates/familyAccount.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="helper_methods.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/booking/helper_methods.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+            <state relative-caret-position="620">
+              <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -68,8 +88,8 @@
       <file leaf-file-name="babySitterAccount.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/booking/templates/babySitterAccount.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="50" column="48" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+            <state relative-caret-position="-172">
+              <caret line="20" column="69" lean-forward="true" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -124,17 +144,18 @@
         <option value="$PROJECT_DIR$/booking/templates/registration/babySitterList.html" />
         <option value="$PROJECT_DIR$/booking/templates/BabySitterAccount.html" />
         <option value="$PROJECT_DIR$/booking/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/booking/templates/familyAccount.html" />
         <option value="$PROJECT_DIR$/booking/templates/babySitterSchedule.html" />
         <option value="$PROJECT_DIR$/booking/templates/base.html" />
         <option value="$PROJECT_DIR$/booking/templates/helper_methods.py" />
         <option value="$PROJECT_DIR$/booking/management/commands/initMyDB.py" />
         <option value="$PROJECT_DIR$/booking/templates/success.html" />
-        <option value="$PROJECT_DIR$/booking/helper_methods.py" />
         <option value="$PROJECT_DIR$/booking/models.py" />
-        <option value="$PROJECT_DIR$/booking/urls.py" />
-        <option value="$PROJECT_DIR$/booking/views.py" />
         <option value="$PROJECT_DIR$/booking/templates/babySitterAccount.html" />
+        <option value="$PROJECT_DIR$/booking/templates/BookAvailability.html" />
+        <option value="$PROJECT_DIR$/booking/templates/familyAccount.html" />
+        <option value="$PROJECT_DIR$/booking/urls.py" />
+        <option value="$PROJECT_DIR$/booking/helper_methods.py" />
+        <option value="$PROJECT_DIR$/booking/views.py" />
       </list>
     </option>
   </component>
@@ -333,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510789184647</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Delete availability added.">
+      <created>1510791031260</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1510791031260</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -408,21 +436,14 @@
     <MESSAGE value="Booked time deletion added but not tested." />
     <MESSAGE value="Add availability for the baby sitters added." />
     <MESSAGE value="Delete booked time added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete booked time added." />
+    <MESSAGE value="Delete availability added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete availability added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/booking/templates/babySitterAccount.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/booking/templates/babySitterSchedule.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -728,13 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/booking/templates/familyAccount.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/booking/management/commands/initMyDB.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -766,44 +780,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/booking/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="350">
+          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/booking/templates/babySitterAccount.html">
+    <entry file="file://$PROJECT_DIR$/booking/templates/familyAccount.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="50" column="48" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+        <state relative-caret-position="566">
+          <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/booking/helper_methods.py">
+    <entry file="file://$PROJECT_DIR$/booking/templates/babySitterAccount.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="34" column="35" lean-forward="false" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        <state relative-caret-position="-172">
+          <caret line="20" column="69" lean-forward="true" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/booking/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="234">
+          <caret line="13" column="68" lean-forward="false" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/booking/templates/BookAvailability.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/booking/helper_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="39" column="40" lean-forward="false" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/booking/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="80" column="56" lean-forward="false" selection-start-line="80" selection-start-column="56" selection-end-line="80" selection-end-column="56" />
+        <state relative-caret-position="2430">
+          <caret line="135" column="24" lean-forward="false" selection-start-line="135" selection-start-column="24" selection-end-line="135" selection-end-column="24" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
