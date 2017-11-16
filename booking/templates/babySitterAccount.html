@@ -44,7 +44,13 @@
                 <tr class="info">
                     <td scope="row" class="info">{{availability.start_time}}</td>
                     <td scope="row" class="info">{{availability.end_time}}</td>
-                    <td scope="row" class="info"><button type="button" id="availability-{{availability.id}}" class="btn btn-danger">Delete</button></td>
+                    <td scope="row" class="info">
+                        <form method="post" action="/deleteAvailability/">
+                            {% csrf_token %}
+                            <input type="hidden" name= "id" value="{{availability.id}}">
+                            <button type="submit" id="availability-{{availability.id}}" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
                 </tr>
             {% endfor %}
         {% endif %}

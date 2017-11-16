@@ -1,10 +1,7 @@
 from django.contrib.auth.models import User, Permission
 from django.db import models
-import pytz
 
 # Create your models here.
-
-utc=pytz.UTC
 
 
 class BabySitter(models.Model):

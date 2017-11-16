@@ -9,5 +9,6 @@ urlpatterns = [
     # url(r'^$', views.index, name='index'),
     url(r'^accounts/profile/$', views.index, name='index'),
     url(r'^deleteBooking/$', views.delete_booking, name='delete_booking'),
-    url(r'^addAvailability/$', views.baby_sitter_add_availability, name='baby_sitter_add_availability')
+    url(r'^deleteAvailability/$', views.delete_availability, name='delete_availability'),
+    url(r'^deleteAvailability/$', views.baby_sitter_add_availability, name='baby_sitter_add_availability')
 ]

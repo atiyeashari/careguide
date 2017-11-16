@@ -1,6 +1,4 @@
 from booking.models import *
-import pytz
-utc=pytz.UTC
 
 
 # Finds overlapping intervals
@@ -35,8 +33,6 @@ def included(times, interval):
 # Input is an availability object
 # It finds all the overlapping availabilities and deletes them and adds the new availability to database
 def add_availability(availability):
-    availability.start_time = utc.localize(availability.start_time)
-    availability.end_time = utc.localize(availability.end_time)
     booked_times = BookedTime.objects.filter(baby_sitter=availability.baby_sitter)
     if len(overlap(booked_times, availability)) > 0:
         print("This time cannot be available because it's booked.")
