@@ -10,6 +10,9 @@ def overlap(times, interval):
             continue
         if interval.end_time >= time.start_time and interval.end_time <= time.end_time:
             overlapped.append(i)
+            continue
+        if interval.start_time <= time.start_time and interval.end_time >= time.end_time:
+            overlapped.append(i)
     return overlapped
 
 
